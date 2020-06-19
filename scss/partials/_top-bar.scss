@@ -1,0 +1,222 @@
+// TOP BAR
+.top-bar {
+    background: $primary-color;
+}
+
+.top-bar .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.top-bar .wrapper .top-menu-left .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-bar .wrapper .top-menu-left .menu .menu-item {
+    list-style: none;
+}
+
+.top-bar .wrapper .top-menu-left .menu .menu-item a {
+    text-decoration: none;
+    color: $secondary-white-color;
+    font-size: .75rem;
+    padding: 10px 15px;
+}
+
+.top-bar .wrapper .top-menu-left .menu .menu-item a:first-child {
+    padding-left: 0;
+}
+
+.top-bar .wrapper .top-menu-left .menu .menu-item a:hover {
+    text-decoration: underline;
+    color: $secondary-white-color !important;
+}
+
+// Top Bar Menu Right Dropdown Icon
+.top-bar .top-menu-right .menu .menu-item-has-children .menu-link {
+    position: relative;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .menu-link .caret::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f107";
+    font-weight: 600;
+    font-size: .75rem;
+    position: absolute;
+    top: 54%;
+    right: -2px;
+    transform: translate(-50%, -50%);
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .menu-link-ul {
+    position: relative;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .menu-link-ul .caret::before {
+    content: '\00bb';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(-50%, -50%);
+    font-size: .75rem;
+}
+
+// /////// 
+// Top Bar Menu Right Links
+.top-bar .top-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-bar .top-menu-right .menu {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 30px 0 0 !important;
+}
+
+.top-bar .top-menu-right .menu .menu-item {
+    display: inline-block;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.top-bar .top-menu-right .menu .menu-item a {
+    text-decoration: none;
+    padding: 12px 15px;
+    padding-left: 2px;
+    display: block;
+    color: $secondary-white-color;
+    font-size: .9rem;
+}
+
+.top-bar .top-menu-right .menu .menu-item a:hover {
+    color: $main-white-color !important;
+}
+
+// Main Menu Dropdown level 1
+.top-bar .top-menu-right .menu .menu-item-has-children {
+    position: relative;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 105px;
+    box-shadow: 0 0 2px 0 $secondary-color;
+    border-top: 2px solid $secondary-white-color;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: $main-white-color;
+    line-height: 1.1;
+    display: none;
+    z-index: 9999;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .sub-menu .menu-item {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .sub-menu .menu-item a {
+    display: block;
+    padding: 14px;
+    font-size: .8rem;
+    border-bottom: 1px solid rgba(189, 188, 188, 0.3);
+    color: $secondary-color !important;
+}
+
+.top-bar .top-menu-right .menu .menu-item-has-children .sub-menu .menu-item a:hover {
+    color: $secondary-color !important;
+    background: $secondary-white-color !important;
+    text-decoration: underline;
+}
+
+.top-bar .social-media {
+    margin-right: 20px;
+}
+
+.top-bar .social-media a {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.top-bar .social-media i {
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border: none;
+    border-radius: 50%;
+    color: $secondary-color;
+    transition: all .25s ease-in-out;
+    background: $secondary-white-color;
+    box-shadow: 0 0 2px 0 $light-grey-color;
+}
+
+.top-bar .social-media i:hover {
+    background: $secondary-white-color;
+
+    &.facebook {
+        color: $facebook-color;
+    }
+
+    &.instagram {
+        color: $instagram-color;
+    }
+
+    &.twitter {
+        color: $twitter-color;
+    }
+}
+.top-bar .top-menu-right .form-control {
+    padding: 4px !important;
+    font-size: .75rem !important;
+}
+
+.top-bar .top-menu-right .main-search-form .search-btn {
+    background: $main-white-color !important;
+}
+
+@media ( max-width: 1100px ) {
+    .top-bar .wrapper .top-menu-left .menu .menu-item a {
+        font-size: .7rem;
+        padding: 10px;
+    }
+
+    .top-bar .top-menu-right {
+        display: none;
+    }
+}
+
+@media ( max-width: 992px ) {
+
+    .top-bar .top-menu-right {
+        display: none;
+    }
+
+    .top-bar .top-menu-left {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

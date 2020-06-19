@@ -1,0 +1,94 @@
+.above-navigation {
+    padding: 15px 0;
+}
+
+.above-navigation .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.above-navigation .site-branding {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.above-navigation .site-branding .logo-text {
+    padding: 0;
+    margin: 0;
+}
+
+.above-navigation .site-branding .logo-text .site-title {
+    line-height: 0 !important;
+    text-transform: uppercase;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.above-navigation .site-branding .logo-text .site-title a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 1.3rem;
+    font-weight: weight(bold);
+    line-height: 0;
+    display: block;
+}
+
+.above-navigation .site-branding .brand-logo {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.above-navigation .site-branding .brand-logo img {
+    max-width: 80%;
+}
+
+.logo-hidden-field {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0;
+    opacity: 0;
+}
+
+@media( max-width: 992px ) {
+    .above-navigation .wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .above-navigation .site-branding {
+        margin-bottom: 15px;
+    }
+
+    .above-navigation .site-branding .brand-logo img {
+        max-width: 180px;
+    }
+}
+
+.above-navigation .ad-container {
+    max-height: 90px;
+    width: 728px;
+    max-width: 100% !important;
+    height: auto;
+    overflow: hidden;
+    margin: 0 !important;
+    z-index: 1;
+}
+
+.above-navigation .ad-container .ad-content {
+    display: inline-block !important;
+    overflow: hidden !important;
+}
+
+.above-navigation .ad-container .ad-content img {
+    height: auto;
+    width: auto;
+}
+
+.ad-container a {
+    line-height: 0;
+    display: block;
+}

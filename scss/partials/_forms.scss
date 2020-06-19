@@ -1,0 +1,98 @@
+input[type="text"].form-control,
+input[type="search"].form-control,
+input[type="url"].form-control,
+input[type="email"].form-control,
+textarea.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: .9rem;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+
+.form-control:focus {
+    box-shadow: 0 0 5px 0 rgba($main-black-color, .25);
+    outline: 1px solid rgba($main-black-color, .25);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    column-gap: 10px;
+    position: relative;
+}
+
+
+.main-search-form {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.main-search-form input[type="search"] {
+    border-radius: 0 !important;
+    border-top-left-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    border-right: none;
+}
+
+.main-search-form .search-btn {
+    border-radius: 0 !important;
+    border-top-right-radius: 2px !important;
+    border-bottom-right-radius: 2px !important;
+    border-left: none;
+    background: transparent !important;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-search-form .search-btn:focus {
+    outline: 0;
+}
+
+.main-search-form .search-btn:hover, 
+.main-search-form .search-btn:active {
+    outline: 0;
+}
+
+.main-search-form .search-btn .search-icon-btn {
+    text-align: center !important;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.main-search-form .form-control {
+    font-size: .85rem;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: .75rem;
+}
+
+.widget select {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+form select {
+    width: 100%;
+    display: block;
+    padding: 5px;
+}
